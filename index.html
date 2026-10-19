@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#F8FAFC">
+    <title>叶洪瑞 · 全栈工程师｜工业现场 AI 应用与企业平台</title>
+    <meta name="description" content="全栈工程师叶洪瑞的项目实践：工业现场 AI 隐患识别与整改协作、企业微应用接入 SDK，以及 BEUI 已合并修复。">
+    <link rel="canonical" href="https://hruilabs.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="叶洪瑞 · 工业安全巡检，从识别到整改。">
+    <meta property="og:description" content="主导工业现场 AI 隐患识别与整改协作平台的应用侧研发，自主设计企业微应用接入 SDK。查看项目职责与公开贡献。">
+    <meta property="og:url" content="https://hruilabs.github.io/">
+    <meta property="og:image" content="https://hruilabs.github.io/assets/social.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="叶洪瑞，全栈工程师。工业安全巡检，从识别到整改；企业微应用接入 SDK。">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://hruilabs.github.io/assets/social.png">
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <script src="./assets/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="site-header">
+      <div class="header-inner page-width">
+        <a class="brand" href="#top" aria-label="叶洪瑞，回到首页顶部">
+          <span class="brand-mark" aria-hidden="true">叶</span>
+          <span>叶洪瑞<span class="brand-subtitle"> / hruilabs</span></span>
+        </a>
+        <nav class="main-nav" aria-label="主要导航">
+          <a href="#work">项目</a>
+          <a href="#opensource">开源</a>
+          <a href="#about">关于</a>
+          <a href="#contact">联系</a>
+        </nav>
+        <a class="header-github" href="https://github.com/hruilabs" aria-label="查看叶洪瑞的 GitHub 主页">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+          <span>GitHub</span><span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero page-width" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>叶洪瑞 · 全栈工程师</p>
+          <h1 id="hero-title"><span>工业安全巡检，</span><span>从识别<span class="accent-text">到整改。</span></span></h1>
+          <p class="hero-description">我主导 AI 隐患识别与整改协作平台的应用侧研发，连接现场检查、施工整改与监理复验；也自主设计企业微应用接入 SDK。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#hazard-case">查看安全巡检项目<span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#sdk-case">查看微应用 SDK<span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-scope" aria-label="主要工作方向"><span>工业现场 AI 应用</span><span>企业应用接入</span><span>开源组件</span></div>
+        </div>
+        <figure class="hero-figure business-figure" aria-labelledby="business-figure-title">
+          <div class="figure-topline"><span class="mono">PRODUCT / SAFETY</span><span>业务流程示意</span></div>
+          <p class="business-figure-title" id="business-figure-title">AI 隐患巡检与整改协作</p>
+          <ol class="business-role-flow">
+            <li><span class="role-step" aria-hidden="true">01</span><div><span class="role-name">工区检查人</span><p>查看证据，上报隐患</p></div><span class="role-artifact">隐患记录</span></li>
+            <li><span class="role-step" aria-hidden="true">02</span><div><span class="role-name">监理</span><p>确认派发，或退回处理</p></div><span class="role-artifact">整改任务</span></li>
+            <li><span class="role-step" aria-hidden="true">03</span><div><span class="role-name">施工方</span><p>处理问题，提交整改材料</p></div><span class="role-artifact">整改材料</span></li>
+            <li><span class="role-step" aria-hidden="true">04</span><div><span class="role-name">监理</span><p>复验通过，或退回整改</p></div><span class="role-artifact">复验结果</span></li>
+          </ol>
+          <figcaption>展示角色与业务关系，不是项目内部界面</figcaption>
+        </figure>
+      </section>
+
+      <section class="work-section section-space page-width" id="work" aria-labelledby="work-title">
+        <div class="section-heading"><div><p class="eyebrow section-kicker">产品与项目</p><h2 id="work-title">安全业务产品，<br>与企业应用接入。</h2></div><p class="section-intro">围绕现场隐患的处置协作，<br>以及多个业务应用的统一接入。</p></div>
+        <article class="project-row ai-project" id="hazard-case" aria-labelledby="hazard-title">
+          <div class="project-overview">
+            <div class="project-meta"><span class="project-category">工业现场 AI 应用</span><span class="badge badge-role">应用侧主导</span><span class="badge badge-iterating">持续迭代</span></div>
+            <h3 id="hazard-title">AI 隐患识别<br>与整改协作平台</h3>
+            <p>把摄像机巡检及图片、视频识别发现的隐患，纳入台账并对接整改、复验。</p>
+            <div class="project-audience"><p class="audience-title">给谁使用</p><ul><li><span>工区检查人</span>查看证据、上报隐患</li><li><span>施工方</span>上传材料、提交整改</li><li><span>监理</span>确认派发、退回与复验</li></ul></div>
+            <p class="project-public-note">匿名工作案例 · 展示业务与职责</p>
+          </div>
+          <div class="project-detail">
+            <p class="project-lead">从现场发现，到一次有据可查的整改。</p>
+            <p>识别结果经过规则准入后形成正式待整改隐患，再进入上报、整改和复验。每条隐患关联现场证据、等级依据与处置进度，供检查、整改和复验围绕同一记录协作。</p>
+            <ol class="case-business-flow" aria-label="隐患从发现到整改复验的业务链">
+              <li><span class="case-step">01</span><h4>巡检发现</h4><p>摄像机巡检或图片、视频识别，经过规则准入，形成待整改隐患。</p></li>
+              <li><span class="case-step">02</span><h4>隐患台账</h4><p>检查人查看原始证据并上报；监理确认派发，或退回处理。</p></li>
+              <li><span class="case-step">03</span><h4>整改处理</h4><p>施工方处理问题，上传整改材料，提交整改结果。</p></li>
+              <li><span class="case-step">04</span><h4>监理复验</h4><p>监理根据整改情况复验，给出通过或退回的结果。</p></li>
+            </ol>
+            <div class="case-responsibilities"><h4>我负责的应用侧工作</h4><ul><li><strong>巡检与素材入口</strong><span>串联识别调用、任务状态与失败反馈。</span></li><li><strong>隐患台账与详情</strong><span>组织状态、原始证据，以及图片和视频回看。</span></li><li><strong>整改流程对接</strong><span>对接上报、整改和复验，展示处理状态与整改材料。</span></li></ul></div>
+            <p class="case-delivery-note">识别结果要能追溯到原图，进行中的任务要有状态，失败要有清楚的反馈和重试入口，处置人员才能继续工作。</p>
+            <p class="collaboration-boundary"><strong>协作边界</strong>算法训练、识别算法与规则判定由协作团队负责；我主导应用侧的流程串联、页面与服务研发。</p>
+            <details class="project-disclosure">
+              <summary>实现细节：识别结果与原始证据<span class="disclosure-icon" aria-hidden="true"></span></summary>
+              <div class="disclosure-body"><p>识别结果关联原图证据；视频结果支持定位到原视频对应时间，便于回看上下文。这里说明应用能力，不展示内部数据、代码或配置。</p><p class="technology-note">应用侧技术：React / TypeScript · NestJS / PostgreSQL</p></div>
+            </details>
+          </div>
+        </article>
+        <article class="project-row sdk-project" id="sdk-case" aria-labelledby="sdk-title">
+          <div class="project-overview">
+            <div class="project-meta"><span class="project-category">企业应用接入</span><span class="badge badge-role">自主设计</span><span class="badge badge-progress"><span class="progress-dot" aria-hidden="true"></span>研发中</span></div>
+            <h3 id="sdk-title">企业微应用<br>接入 SDK</h3>
+            <p>面向业务应用开发者与平台维护者，为多个应用接入同一企业入口提供统一约定。</p>
+            <div class="project-audience"><p class="audience-title">设计目标</p><p>共用登录态、导航、权限与主题，避免每个应用各接一套约定。</p></div>
+            <p class="project-public-note">核心模块已实现 · 集成完善中</p>
+          </div>
+          <div class="project-detail">
+            <p class="project-lead">让业务应用知道，怎样接入企业平台。</p>
+            <p>自主设计并主导研发接入 SDK，将宿主与微应用之间的协作方式整理为协议和核心模块，包括认证、导航、按钮权限、主题与生命周期。</p>
+            <ol class="sdk-relationship" aria-label="企业平台通过 SDK 接入微应用"><li><span class="relation-label">统一企业入口</span><strong>宿主平台</strong><span class="relation-description">提供登录态与平台能力</span></li><li><span class="relation-label">接入约定</span><strong>微应用 SDK</strong><span class="relation-description">协议、核心模块与适配</span></li><li><span class="relation-label">业务功能</span><strong>业务微应用</strong><span class="relation-description">接入并使用平台能力</span></li></ol>
+            <div class="case-responsibilities sdk-responsibilities"><h4>我负责的工作</h4><ul><li><strong>接入协议</strong><span>定义宿主与微应用之间的通信和能力约定。</span></li><li><strong>核心模块</strong><span>实现认证、导航、权限、主题与生命周期接入。</span></li><li><strong>宿主与 Vue 适配</strong><span>将核心能力接入宿主及 Vue 应用的使用方式。</span></li></ul></div>
+            <p class="project-stage-note"><span class="progress-dot" aria-hidden="true"></span><strong>当前阶段：</strong>核心模块已实现，正在完善宿主集成与边界场景验证。</p>
+            <details class="project-disclosure">
+              <summary>实现细节：并发请求的凭证过期<span class="disclosure-icon" aria-hidden="true"></span></summary>
+              <div class="disclosure-body"><dl><div><dt>遇到的问题</dt><dd>多个请求同时发现凭证过期时，各自刷新会造成重复请求与状态竞争。</dd></div><div><dt>接入方式</dt><dd>并发请求共享一次刷新。刷新成功后，原请求分别重试一次；失败由宿主统一处理登录失效。</dd></div></dl><p class="technology-note">接入实现：TypeScript · Vue 适配</p></div>
+            </details>
+          </div>
+        </article>
+      </section>
+
+      <section class="opensource-section section-space" id="opensource" aria-labelledby="opensource-title">
+        <div class="page-width">
+          <div class="section-heading">
+            <div><p class="eyebrow section-kicker">公开贡献</p><h2 id="opensource-title">BEUI 组件库：<br>3 项已合并修复。</h2></div>
+            <p class="section-intro">从实际使用中发现问题，沿着组件原有的设计修复。<br>通过上游 PR 查看问题、改动与合并记录。</p>
+          </div>
+          <article class="input-contribution">
+            <div class="contribution-story">
+              <div class="project-meta"><span class="mono">BEUI / Input</span><span class="badge badge-merged"><span aria-hidden="true">✓</span> 已合并</span></div>
+              <h3>提示出现了，<br>表单不必跟着移动。</h3>
+              <p>Input 显示校验信息时，会推移下方控件。我为组件增加可选的错误信息预留行，让需要稳定布局的表单可以主动选择。</p>
+              <a class="text-link" href="https://github.com/starc007/ui-components/pull/166">查看 PR #166<span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="input-demo" id="input-demo">
+              <div class="demo-header"><span class="demo-title">一个小演示</span><span class="demo-label">交互示意，非在线服务</span></div>
+              <div class="demo-columns">
+                <div class="demo-form demo-form-before">
+                  <p class="demo-variant"><span class="variant-dot variant-dot-before" aria-hidden="true"></span>未预留错误区</p>
+                  <label for="demo-name-before">显示名称</label>
+                  <input id="demo-name-before" type="text" value="h" readonly autocomplete="off">
+                  <div class="demo-error-slot"><p class="demo-error" id="demo-error-before" hidden>请至少填写 2 个字符</p></div>
+                  <div class="demo-next-field" data-demo-next="before"><span class="demo-field-label">个人介绍</span><div class="demo-static-field">一个喜欢打磨细节的人</div></div>
+                </div>
+                <div class="demo-form demo-form-after">
+                  <p class="demo-variant"><span class="variant-dot variant-dot-after" aria-hidden="true"></span>已预留错误区</p>
+                  <label for="demo-name-after">显示名称</label>
+                  <input id="demo-name-after" type="text" value="h" readonly autocomplete="off">
+                  <div class="demo-error-slot demo-error-slot-reserved"><p class="demo-error" id="demo-error-after" hidden>请至少填写 2 个字符</p></div>
+                  <div class="demo-next-field" data-demo-next="after"><span class="demo-field-label">个人介绍</span><div class="demo-static-field">一个喜欢打磨细节的人</div></div>
+                </div>
+              </div>
+              <div class="demo-footer">
+                <button class="button button-demo" id="demo-toggle" type="button" aria-pressed="false" aria-controls="demo-error-before demo-error-after" hidden><span class="button-label">显示校验提示</span><span aria-hidden="true">↻</span></button>
+                <p id="demo-announcement" class="demo-announcement" aria-live="polite" aria-atomic="true">右侧提前为提示留出了位置。</p>
+              </div>
+              <noscript><p class="noscript-note">启用 JavaScript 后可切换校验提示。左侧出现提示时会向下移动，右侧因预留错误区而保持位置。</p></noscript>
+            </div>
+          </article>
+          <div class="other-contributions">
+            <article class="compact-contribution">
+              <div class="compact-icon" aria-hidden="true"><svg viewBox="0 0 28 28" fill="none"><path d="M4 20V9h20v11M4 20h20" stroke="currentColor" stroke-width="1.5"/><path d="M9 9v11M18 9v11M5 6h7" stroke="currentColor" stroke-width="1.5"/><rect x="10" y="10" width="7" height="9" rx="1" fill="currentColor" opacity=".18"/></svg></div>
+              <div class="compact-copy"><div class="project-meta"><span class="mono">BEUI / Tabs</span><span class="badge badge-merged">已合并</span></div><h3>让动效不再带出滚动条抖动</h3><p>处理弹簧过冲带来的滚动条问题，保留窄屏使用与减少动态效果的支持。</p><a class="text-link" href="https://github.com/starc007/ui-components/pull/174">查看 PR #174<span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="compact-contribution">
+              <div class="compact-icon" aria-hidden="true"><svg viewBox="0 0 28 28" fill="none"><rect x="3" y="6" width="22" height="16" rx="4" stroke="currentColor" stroke-width="1.5"/><circle cx="9" cy="14" r="2" stroke="currentColor" stroke-width="1.5"/><path d="M14 12h6M14 16h4" stroke="currentColor" stroke-width="1.5"/></svg></div>
+              <div class="compact-copy"><div class="project-meta"><span class="mono">BEUI / Toast</span><span class="badge badge-merged">已合并</span></div><h3>简单通知，也要准确对齐</h3><p>修复纯标题通知的文字、图标与关闭按钮对齐，并兼容描述、操作和动态更新。</p><a class="text-link" href="https://github.com/starc007/ui-components/pull/175">查看 PR #175<span aria-hidden="true">↗</span></a></div>
+            </article>
+          </div>
+          <p class="evidence-note">以上状态依据公开 PR 核对 · 2026.10</p>
+        </div>
+      </section>
+
+      <section class="about-section section-space" id="about" aria-labelledby="about-title">
+        <div class="about-inner page-width">
+          <div class="about-heading"><p class="eyebrow section-kicker">关于我</p><h2 id="about-title">教育产品前端，<br>到企业全栈。</h2><p class="about-signature">叶洪瑞<span class="mono"> / hruilabs</span></p></div>
+          <div class="about-copy"><p class="about-lead">我叫叶洪瑞，是一名以前端起步的全栈工程师。</p><p>早期参与教育产品前端研发，现在主要做工业现场 AI 应用与企业平台接入。工作范围从界面延伸到服务接口、任务状态、认证与权限。</p><p>在 AI 隐患项目中，我主导应用侧研发，与算法及规则团队协作；微应用 SDK 则由我自主设计并持续完善。这里分别说明实际职责、协作范围与项目阶段。</p><div class="ai-collaboration"><span class="collaboration-label">开发方式</span><p>开发中使用 AI 协助编码、方案比较和问题排查；这里按本人职责、协作分工与项目阶段呈现工作。</p></div></div>
+        </div>
+      </section>
+
+      <section class="contact-section page-width" id="contact" aria-labelledby="contact-title">
+        <div><p class="eyebrow section-kicker">保持联系</p><h2 id="contact-title">聊聊应用研发，<br>与企业平台建设。</h2><p>关注 AI 应用、企业平台与全栈研发机会。<br>公开贡献与项目动态可在 GitHub 查看。</p></div>
+        <a class="contact-github" href="https://github.com/hruilabs"><span class="mono">github.com/hruilabs</span><span class="contact-arrow" aria-hidden="true">↗</span><span class="contact-link-label">访问 GitHub 主页</span></a>
+      </section>
+    </main>
+    <footer class="site-footer page-width"><p>© 2026 叶洪瑞</p><p>更新于 2026.10</p><a href="https://github.com/hruilabs">GitHub 主页<span aria-hidden="true"> ↗</span></a></footer>
+  </body>
+</html>
